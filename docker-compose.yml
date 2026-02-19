@@ -36,8 +36,8 @@ services:
 
   products-app:
     build:
-      context: ../product
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Dockerfile.products
     container_name: products_app
     depends_on:
       postgres:
@@ -55,8 +55,8 @@ services:
 
   storelogin-app:
     build:
-      context: ../storeLogin
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Dockerfile.storelogin
     container_name: storelogin_app
     depends_on:
       postgres:
@@ -75,8 +75,8 @@ services:
 
   administration-app:
     build:
-      context: ../administration
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Dockerfile.administration
     container_name: administration_app
     depends_on:
       postgres:

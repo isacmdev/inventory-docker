@@ -1,0 +1,19 @@
+FROM gradle:8.14-jdk17-alpine AS builder
+
+RUN apk add --no-cache git
+
+WORKDIR /app
+
+RUN git clone https://github.com/isacmdev/inventory-storeLogin.git .
+
+RUN gradle bootJar --no-daemon -x test
+
+FROM eclipse-temurin:17-jre-alpine
+
+WORKDIR /app
+
+COPY --from=builder /app/build/libs/*.jar app.jar
+
+EXPOSE 8082
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
