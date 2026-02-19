@@ -21,11 +21,11 @@ cd inventory-docker
   ```
 ## 📂 Estructura del proyecto
 .
-- `├──docker-compose.yml`
-- `├── dockerfile.storelogin`
-- `├── dockerfile.products`
-- `├── dockerfile.administration`
-- `└── .env`
+ `├──docker-compose.yml`
+ `├── dockerfile.storelogin`
+ `├── dockerfile.products`
+ `├── dockerfile.administration`
+ `└── .env`
 
 
 ## ArchivoDescripción
