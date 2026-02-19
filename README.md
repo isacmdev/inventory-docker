@@ -35,20 +35,20 @@ dockerfile.products	Servicio CRUD de productos
 dockerfile.administration	Servicio de administración
 
 
-### 🔐 Variable de entorno JWT_SECRET
+## 🔐 Variable de entorno JWT_SECRET
 Para crear la variable de entorno JWT_SECRET ejecute el siguiente comando
 
-# PowerShell (Windows)
+### PowerShell (Windows)
 ```powershell
 "JWT_SECRET=$([Convert]::ToBase64String((1..32 | % {Get-Random -Max 256})))" | Set-Content .env
 ```
 
-# Linux / macOS
+### Linux / macOS
 ```bash
 echo "JWT_SECRET=$(openssl rand -base64 32)" > .env
 ```
 
-# Alternativa (urandom)
+### Alternativa (urandom)
 ```bash
 echo "JWT_SECRET=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1 |
 ```
