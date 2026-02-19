@@ -4,7 +4,7 @@ RUN apk add --no-cache git
 
 WORKDIR /app
 
-RUN git clone https://github.com/isacmdev/inventory-products.git .
+RUN git clone --depth 1 https://github.com/isacmdev/inventory-products.git .
 
 RUN gradle bootJar --no-daemon -x test
 
