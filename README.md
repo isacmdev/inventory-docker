@@ -21,18 +21,18 @@ cd inventory-docker
   ```
 ## 📂 Estructura del proyecto
 .
-├── docker-compose.yml
-├── dockerfile.storelogin
-├── dockerfile.products
-├── dockerfile.administration
-└── .env
+- `├──docker-compose.yml`
+- `├── dockerfile.storelogin`
+- `├── dockerfile.products`
+- `├── dockerfile.administration`
+- `└── .env`
 
 
 ## ArchivoDescripción
-docker-compose.yml	Orquestación de servicios
-dockerfile.storelogin	Servicio de autenticación de tiendas
-dockerfile.products	Servicio CRUD de productos
-dockerfile.administration	Servicio de administración
+- `docker-compose.yml	Orquestación de servicios`
+- `dockerfile.storelogin	Servicio de autenticación de tiendas`
+- `dockerfile.products	Servicio CRUD de productos`
+- `dockerfile.administration	Servicio de administración`
 
 
 ## 🔐 Variable de entorno JWT_SECRET
