@@ -33,7 +33,7 @@ echo "JWT_SECRET=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 
 ```
 
 
-- ## Reconstruir y levantar en un solo comando:**
+## Reconstruir y levantar en un solo comando:**
 ```bash
 
   docker compose up -d --build
