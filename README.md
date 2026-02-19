@@ -20,7 +20,7 @@ cd inventory-docker
   docker compose up -d --build
   ```
 ## 📂 Estructura del proyecto
-.
+
 - ├──docker-compose.yml
 - ├── dockerfile.storelogin
 - ├── dockerfile.products
